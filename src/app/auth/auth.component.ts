@@ -12,7 +12,7 @@ import {PlaceHolderDirective} from '../shared/placeHolder/placeHolder.directive'
 })
 
 export class AuthComponent implements OnDestroy{
-  @ViewChild(PlaceHolderDirective) alertHost: PlaceHolderDirective;
+  @ViewChild(PlaceHolderDirective, { static: false }) alertHost: PlaceHolderDirective;
 
   private closeSub: Subscription;
 
