@@ -7,7 +7,7 @@ const loadRecipesModule = () => import('./recipes/recipes.module').then(m => m.R
 const loadShopingList = () => import('./shopping-list/shopping-list.module').then(m => m.ShoppingListModule);
 
 const routes: Routes = [
-  { path: '', redirectTo: '/recipes', pathMatch: 'full' },
+  { path: '', redirectTo: 'recipes', pathMatch: 'full' },
   {path: 'recipes', loadChildren: loadRecipesModule},
   {path: 'shopping-list', loadChildren: loadShopingList},
   {path: 'auth', loadChildren: loadAuthModule}

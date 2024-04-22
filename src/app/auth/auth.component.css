@@ -11,3 +11,14 @@
 .form-group {
   margin-bottom: 15px;
 }
+
+.background-container {
+  background-image: url('../../assets/images/login-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.h-100 {
+  height: 100%;
+}
