@@ -1,0 +1,61 @@
+/* Navbar container */
+.navbar {
+  background-color: #f8f9fa;
+  /* Set the background color */
+  border: 1px solid #dee2e6;
+  /* Add a border */
+  border-radius: 4px;
+  /* Add rounded corners */
+}
+
+/* Navbar header */
+.navbar-header {
+  padding: 10px;
+  /* Add padding */
+}
+
+/* Navbar brand link */
+.navbar-brand {
+  font-size: 24px;
+  /* Set the font size */
+  color: #007bff;
+  /* Set the font color */
+}
+
+/* Navbar menu items */
+.navbar-nav li {
+  margin-right: 10px;
+  /* Add space between menu items */
+}
+
+/* Navbar active link */
+.navbar-nav li.active a {
+  color: #ffffff;
+  /* Change color of active link */
+  background-color: #007bff;
+  /* Change background color of active link */
+}
+
+/* Navbar dropdown menu */
+.dropdown-menu {
+  background-color: #ffffff;
+  /* Set the background color */
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  /* Add a border */
+  border-radius: 4px;
+  /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add shadow */
+}
+
+/* Navbar dropdown menu items */
+.dropdown-menu li {
+  padding: 10px;
+  /* Add padding */
+}
+
+/* Navbar dropdown menu item hover effect */
+.dropdown-menu li:hover {
+  background-color: #f8f9fa;
+  /* Change background color on hover */
+}
