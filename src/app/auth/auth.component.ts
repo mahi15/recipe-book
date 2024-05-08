@@ -18,14 +18,20 @@ export class AuthComponent implements OnDestroy{
   private closeSub: Subscription;
 
   isLogedIn = true;
+  islogin = true;
   isLoading =  false;
   error: string = null;
   constructor(private authService: AuthService,
               private router: Router,
               private ComponentFactory: ComponentFactoryResolver) {}
 
-  onSwitched() {
-    this.isLogedIn = !this.isLogedIn;
+  onSwitched(data: string) {
+    // this.isLogedIn = !this.isLogedIn;
+    if (data === 'Signup') {
+      this.islogin = false;
+    } else {
+      this.islogin = true;
+    }
   }
   onSubmit(form: NgForm) {
     if (!form.valid) {

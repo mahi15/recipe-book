@@ -1,0 +1,5 @@
+.vertical-divider {
+  border-left: 1px solid #ccc;
+  height: 100%;
+  /* Ensures the divider stretches to the full height of the row */
+}
