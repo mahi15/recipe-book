@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="isAuthenticated">
   <div class="container-fluid">
-    <img src="../../assets/images/logo.png" alt="logo" style="width: 60px; margin-left: 20px;">
+    <img src="../../assets/images/logo.png" routerLink="/recipes" alt="logo" style="width: 60px; margin-left: 20px;">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,7 +8,6 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" routerLinkActive="active" *ngIf="isAuthenticated">
-          <a class="nav-link" routerLink="/recipes">Recipes</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink="/shopping-list">Shopping List</a>

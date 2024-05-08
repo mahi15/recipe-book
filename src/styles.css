@@ -11,3 +11,9 @@
 .btn {
   color: #ffffff !important;
 }
+
+.cancel-btn {
+  color: #ffffff !important;
+  border: 1.5px solid rgb(116, 62, 0);
+  background: rgb(48, 48, 48) !important;
+}
