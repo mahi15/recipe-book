@@ -6,7 +6,8 @@ import {Subscription} from 'rxjs';
 
 @Component({
     selector: 'app-header',
-    templateUrl: 'header.component.html'
+  templateUrl: 'header.component.html',
+    styleUrls:  ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
   private userSub: Subscription;
@@ -26,10 +27,10 @@ export class HeaderComponent implements OnInit {
     this.authService.logout();
    }
 
-  onSaveData() {
-    this.dataStorage.storeRecipes();
-  }
-  onFectchData() {
-this.dataStorage.fetchRecipes().subscribe();
-  }
+//   onSaveData() {
+//     this.dataStorage.storeRecipes();
+//   }
+//   onFectchData() {
+// this.dataStorage.fetchRecipes().subscribe();
+//   }
 }

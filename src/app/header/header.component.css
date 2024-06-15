@@ -1,61 +1,59 @@
-/* Navbar container */
-.navbar {
-  background-color: #f8f9fa;
-  /* Set the background color */
-  border: 1px solid #dee2e6;
-  /* Add a border */
-  border-radius: 4px;
-  /* Add rounded corners */
+/* Fancy Navbar Styles */
+.fancy-navbar {
+  background-color: #ffdaa9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar header */
-.navbar-header {
-  padding: 10px;
-  /* Add padding */
+.navbar-logo {
+  width: 60px !important;
+  margin-left: 20px;
+  transition: transform 0.3s;
 }
 
-/* Navbar brand link */
-.navbar-brand {
-  font-size: 24px;
-  /* Set the font size */
-  color: #007bff;
-  /* Set the font color */
+.navbar-logo:hover {
+  transform: scale(1.1);
 }
 
-/* Navbar menu items */
-.navbar-nav li {
-  margin-right: 10px;
-  /* Add space between menu items */
+.fancy-link {
+  color: #343a40;
+  font-weight: 500;
+  transition: color 0.3s, background-color 0.3s;
 }
 
-/* Navbar active link */
-.navbar-nav li.active a {
+.fancy-link:hover {
+  color: #b99463;
+  background-color: rgba(0, 123, 255, 0.1);
+  border-radius: 5px;
+}
+
+.fancy-dropdown {
+  border-radius: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fancy-dropdown .dropdown-item {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.fancy-dropdown .dropdown-item:hover {
+  background-color: #b8b8b8;
   color: #ffffff;
-  /* Change color of active link */
-  background-color: #007bff;
-  /* Change background color of active link */
 }
 
-/* Navbar dropdown menu */
-.dropdown-menu {
-  background-color: #ffffff;
-  /* Set the background color */
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  /* Add a border */
-  border-radius: 4px;
-  /* Add rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Add shadow */
+/* Additional Custom Styles */
+.navbar-toggler-icon {
+  transition: transform 0.3s;
 }
 
-/* Navbar dropdown menu items */
-.dropdown-menu li {
-  padding: 10px;
-  /* Add padding */
+.navbar-toggler:hover .navbar-toggler-icon {
+  transform: rotate(90deg);
 }
 
-/* Navbar dropdown menu item hover effect */
-.dropdown-menu li:hover {
-  background-color: #f8f9fa;
-  /* Change background color on hover */
+.navbar-nav .nav-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #007bff;
+  font-weight: 700;
 }
